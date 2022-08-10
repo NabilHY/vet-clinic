@@ -4,23 +4,28 @@ Vet clinic is a relational database that representes a data structure for a vet 
 
 
 
-## Queries screenshots
-1. animals whose name ends in mon
+
+
+## Transactions screenshots
+1. update the animals table by setting the species column to unspecified
 ![screenshot](./screenshots/screenshot-query1.png)
-2. animals born between 2016 and 2019.
+2. Update the animals that end with mon by setting the species column to digimon & setting the species column to pokemon
 ![screenshot](./screenshots/screenshot-query2.png)
-3. animals that are neutered and have less than 3 escape attempts
+3. delete all records in the animals table, then roll back the transaction
 ![screenshot](./screenshots/screenshot-query3.png)
-4. date of birth of all animals named either Agumon or Pikachu.
+4. Delete all animals born after Jan 1st, 2022 & Update all animals' weights that are negative to be their weight multiplied by -1.
 ![screenshot](./screenshots/screenshot-query4.png)
-5. name and escape attempts of animals that weigh more than 10.5kg
-![screenshot](./screenshots/screenshot-query5.png)
-6.animals that are neutered
-![screenshot](./screenshots/screenshot-query6.png)
-7. animals not named Gabumon.
-![screenshot](./screenshots/screenshot-query7.png)
-8. animals with a weight between 10.4kg and 17.3kg
-![screenshot](./screenshots/screenshot-query8.png)
+
+## Queries scrrenshots
+1. Number of animals
+2. Number of animals that have never tried to escape
+3. Average weight of animals
+![screenshot](./screenshots/1-query.png)
+4. Most escapes by neutered
+5. Minumum and maximum weight by species
+![screenshot](./screenshots/2-query.png)
+6. Average number of escape attempts per animal type of those born between 1990 and 2000
+![screenshot](./screenshots/4-query.png)
 
 
 
