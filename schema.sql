@@ -10,6 +10,19 @@ CREATE TABLE animals (
     species VARCHAR(250)
 );
 
+CREATE TABLE owners (
+    id SERIAL NOT NULL,
+    full_name VARCHAR(250),
+    age INT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE species (
+    id SERIAL NOT NULL,
+    name VARCHAR(250),
+    PRIMARY KEY (id)
+);
+
 ALTER TABLE animals
 ADD COLUMN species_id INT,
 ADD FOREIGN KEY (species_id) REFERENCES species(id)
@@ -21,16 +34,5 @@ ADD FOREIGN KEY (owner_id) REFERENCES owners(id)
 ON DELETE CASCADE;
 
 
-CREATE TABLE owners (
-    id SERIAL NOT NULL,
-    full_name VARCHAR(250),
-    age INT,
-    PRIMARY KEY (id)
-);
 
 
-CREATE TABLE species (
-    id SERIAL NOT NULL,
-    name VARCHAR(250),
-    PRIMARY KEY (id)
-);
