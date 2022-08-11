@@ -9,3 +9,30 @@ CREATE TABLE animals (
     weight_kg DECIMAL,
     species VARCHAR(250)
 );
+
+CREATE TABLE owners (
+    id SERIAL NOT NULL,
+    full_name VARCHAR(250),
+    age INT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE species (
+    id SERIAL NOT NULL,
+    name VARCHAR(250),
+    PRIMARY KEY (id)
+);
+
+ALTER TABLE animals
+ADD COLUMN species_id INT,
+ADD FOREIGN KEY (species_id) REFERENCES species(id)
+ON DELETE CASCADE;
+
+ALTER TABLE animals
+ADD COLUMN owner_id INT,
+ADD FOREIGN KEY (owner_id) REFERENCES owners(id)
+ON DELETE CASCADE;
+
+
+
+

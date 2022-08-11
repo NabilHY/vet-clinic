@@ -5,28 +5,22 @@ Vet clinic is a relational database that representes a data structure for a vet 
 
 
 
-
-## Transactions screenshots
-1. update the animals table by setting the species column to unspecified
-![screenshot](./screenshots/screenshot-query1.png)
-2. Update the animals that end with mon by setting the species column to digimon & setting the species column to pokemon
-![screenshot](./screenshots/screenshot-query2.png)
-3. delete all records in the animals table, then roll back the transaction
-![screenshot](./screenshots/screenshot-query3.png)
-4. Delete all animals born after Jan 1st, 2022 & Update all animals' weights that are negative to be their weight multiplied by -1.
-![screenshot](./screenshots/screenshot-query4.png)
-
 ## Queries scrrenshots
-1. Number of animals
-2. Number of animals that have never tried to escape
-3. Average weight of animals
-![screenshot](./screenshots/1-query.png)
-4. Most escapes by neutered
-5. Minumum and maximum weight by species
-![screenshot](./screenshots/2-query.png)
-6. Average number of escape attempts per animal type of those born between 1990 and 2000
-![screenshot](./screenshots/4-query.png)
 
+1. Animals belonging to Melody Pond
+![screenshot](./screenshots/1-query.png)
+2. Animals that are pokemon
+![screenshot](./screenshots/2-query.png)
+3. Animal owners and their names
+![screenshot](./screenshots/3-query.png)
+4. Number of animals per species
+![screenshot](./screenshots/4-query.png)
+5. Digimon animals owned by Jennifer Orwell
+![screenshot](./screenshots/5-query.png)
+6. Animals owned by Dean Winchester and have never tried to escape
+![screenshot](./screenshots/6-query.png)
+7. Owners with most animals
+![screenshot](./screenshots/7-query.png)
 
 
 ## Authors
