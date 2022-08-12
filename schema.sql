@@ -59,7 +59,7 @@ CREATE TABLE visits (
     animal_id int NOT NULL,
     vet_id int NOT NULL,
     date_of_visit DATE,
-    PRIMARY KEY (animal_id, vet_id),
+    PRIMARY KEY (animal_id, vet_id, date_of_visit),
     FOREIGN KEY (animal_id) REFERENCES animals(id)
     ON DELETE CASCADE,
     FOREIGN KEY (vet_id) REFERENCES vets(id)
