@@ -7,20 +7,24 @@ Vet clinic is a relational database that representes a data structure for a vet 
 
 ## Queries scrrenshots
 
-1. Animals belonging to Melody Pond
-![screenshot](./screenshots/1-query.png)
-2. Animals that are pokemon
-![screenshot](./screenshots/2-query.png)
-3. Animal owners and their names
-![screenshot](./screenshots/3-query.png)
-4. Number of animals per species
-![screenshot](./screenshots/4-query.png)
-5. Digimon animals owned by Jennifer Orwell
-![screenshot](./screenshots/5-query.png)
-6. Animals owned by Dean Winchester and have never tried to escape
-![screenshot](./screenshots/6-query.png)
-7. Owners with most animals
-![screenshot](./screenshots/7-query.png)
+1. 
+![screenshot](./screenshots/query1.png)
+2.
+![screenshot](./screenshots/query2.png)
+3.
+![screenshot](./screenshots/query3.png)
+4. 
+![screenshot](./screenshots/query4.png)
+5.
+![screenshot](./screenshots/query5.png)
+6.
+![screenshot](./screenshots/query6.png)
+7. 
+![screenshot](./screenshots/query7.png)
+8.
+![screenshot](./screenshots/query9.png)
+9.
+![screenshot](./screenshots/query10.png)
 
 
 ## Authors
