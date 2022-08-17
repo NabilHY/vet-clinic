@@ -5,28 +5,9 @@ Vet clinic is a relational database that representes a data structure for a vet 
 
 
 
-## Performance Audit
+## Vet Clinic Database schema Diagram
 
-> This is a screenshot of the performance audit done on the three provided queries before adding indexes 
-![screenshot](./screenshots/before-performance.png)
-
-After having created the indexes. 
-This is is how the execution time was decreased for each query 
-```
-1. SELECT COUNT(*) FROM visits where animal_id = 4;
-```
-![screenshot](./screenshots/querie1-after.png)
-<br>
-```
-2. SELECT COUNT(*) FROM visits where animal_id = 4;
-```
-![screenshot](./screenshots/querie2-after.png)
-<br>
-```
-3. SELECT COUNT(*) FROM visits where animal_id = 4;
-```
-![screenshot](./screenshots/querie3-after.png)
-<br>
+<iframe width="100%" height="500px" style="box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); border-radius:15px;" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Embedded DrawSQL IFrame" frameborder="0" src="https://drawsql.app/teams/nabil-4/diagrams/vet-clinic/embed"></iframe>
 
 ## Authors
 
