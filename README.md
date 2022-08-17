@@ -9,6 +9,8 @@ Vet clinic is a relational database that representes a data structure for a vet 
 
 ![screenshot](./screenshots/schema.png)
 
+
+
 ## Authors
 
 👤 **NabilHY**
