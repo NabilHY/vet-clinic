@@ -106,3 +106,11 @@ JOIN species ON a.species_id = species.id
 WHERE v.name = 'Maisy Smith' 
 GROUP BY a.name, species.name 
 LIMIT 1;
+
+-- Perforamance indexes--
+
+CREATE INDEX va_index ON visits(animal_id);
+
+CREATE INDEX vets_id_asc ON visits(vet_id);
+
+CREATE INDEX email_asc_index ON owners(email);

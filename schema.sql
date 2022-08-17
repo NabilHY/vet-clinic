@@ -66,5 +66,7 @@ CREATE TABLE visits (
     ON DELETE CASCADE
 );
 
+ALTER TABLE visits DROP PRIMARY KEY;
+
 
 
