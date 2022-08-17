@@ -1,35 +1,35 @@
 CREATE TABLE patients (
-    id serial NOT NULL INT,
+    id serial NOT NULL ,
     name VARCHAR(250),
     date_of_birth DATE,
     PRIMARY KEY (id)
-)
+);
 
-CREATE TABLE treatements (
-    id serial NOT NULL INT,
+CREATE TABLE treatments (
+    id serial NOT NULL ,
     type VARCHAR(250),
-    name VARCHAR(250)
+    name VARCHAR(250),
     PRIMARY KEY (id)
-)
+);
 
 CREATE TABLE medical_histories (
-    id serial NOT NULL INT ,
+    id serial NOT NULL,
     admitted_at TIMESTAMP,
     patient_id INTEGER REFERENCES patients(id),
     STATUS VARCHAR(250),
     PRIMARY KEY (id),
-    FOREIGN KEY (patient_id) REFENRENCES patients(id)
-)
+    FOREIGN KEY (patient_id) REFERENCES patients(id)
+);
 
 CREATE TABLE invoices (
-    id serial NOT NULL INT,
+    id serial NOT NULL,
     total_amount DECIMAL,
     generated_at TIMESTAMP,
     payed_at TIMESTAMP,
     medical_history__id INT,
     PRIMARY KEY (id),
-    FOREIGN KEY (medical_history__id) REFERENCES medical_histories(id),
-)
+    FOREIGN KEY (medical_history__id) REFERENCES medical_histories(id)
+);
 
 CREATE TABLE invoice_items (
     id serial NOT NULL,
@@ -41,6 +41,6 @@ CREATE TABLE invoice_items (
     PRIMARY KEY (id),
     FOREIGN KEY (invoice_id) REFERENCES invoices(id),
     FOREIGN KEY (treatment_id) REFERENCES treatments(id)
-)
+);
 
 
