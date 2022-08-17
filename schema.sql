@@ -33,6 +33,7 @@ ADD COLUMN owner_id INT,
 ADD FOREIGN KEY (owner_id) REFERENCES owners(id)
 ON DELETE CASCADE;
 
-
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 
