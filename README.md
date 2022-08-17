@@ -1,27 +1,32 @@
 ## Vet Clinic
 Vet clinic is a relational database that representes a data structure for a vet clinic 
-![screenshot](./screenshots/screenshot-table.png)
 
 
 
 
-## Queries scrrenshots
 
-1. Animals belonging to Melody Pond
-![screenshot](./screenshots/1-query.png)
-2. Animals that are pokemon
-![screenshot](./screenshots/2-query.png)
-3. Animal owners and their names
-![screenshot](./screenshots/3-query.png)
-4. Number of animals per species
-![screenshot](./screenshots/4-query.png)
-5. Digimon animals owned by Jennifer Orwell
-![screenshot](./screenshots/5-query.png)
-6. Animals owned by Dean Winchester and have never tried to escape
-![screenshot](./screenshots/6-query.png)
-7. Owners with most animals
-![screenshot](./screenshots/7-query.png)
+## Performance Audit
 
+> This is a screenshot of the performance audit done on the three provided queries before adding indexes 
+![screenshot](./screenshots/before-performance.png)
+
+After having created the indexes. 
+This is is how the execution time was decreased for each query 
+```
+1. SELECT COUNT(*) FROM visits where animal_id = 4;
+```
+![screenshot](./screenshots/querie1-after.png)
+<br>
+```
+2. SELECT COUNT(*) FROM visits where animal_id = 4;
+```
+![screenshot](./screenshots/querie2-after.png)
+<br>
+```
+3. SELECT COUNT(*) FROM visits where animal_id = 4;
+```
+![screenshot](./screenshots/querie3-after.png)
+<br>
 
 ## Authors
 
