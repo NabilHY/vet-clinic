@@ -1,3 +1,5 @@
+-- Creating tables & establishing relationships    
+
 CREATE TABLE patients (
     id serial NOT NULL ,
     name VARCHAR(250),
@@ -43,4 +45,10 @@ CREATE TABLE invoice_items (
     FOREIGN KEY (treatment_id) REFERENCES treatments(id)
 );
 
+-- Join tables that have many to many relationships
+CREATE TABLE medical_treatments (
+    medical_histories_id INT REFERENCES medical_histories(id),
+    treatments_id INT REFERENCES treatments(id),
+    PRIMARY KEY(medical_histories_id, treatments_id)
+);
 
